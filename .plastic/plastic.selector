@@ -1,0 +1,4 @@
+repository "Lumi5@abraxas:8087"
+  path "/"
+    br "/main"
+    co "/main"

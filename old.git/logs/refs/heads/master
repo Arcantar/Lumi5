@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 dbd816b283edd2fa55c95ef473c029e6eb2d5c63 Norbert <nsg@tetrasys.fi> 1464337467 +0300	commit (initial): Validation initiale pour ajouter les fichiers .gitIgnore et .gitAttribute par défaut.
+dbd816b283edd2fa55c95ef473c029e6eb2d5c63 d2b2a7e24c8748683fc12bc907934730ba57a410 Norbert <nsg@tetrasys.fi> 1464337510 +0300	commit: first block x
+d2b2a7e24c8748683fc12bc907934730ba57a410 1fc84e9d2f8fa7527f344b6bd2d4653b28e71211 Norbert <nsg@tetrasys.fi> 1464344993 +0300	commit: Revert "first block x"
+1fc84e9d2f8fa7527f344b6bd2d4653b28e71211 0593cf3d3bb61305415310b118a11cba0847f596 Norbert <nsg@tetrasys.fi> 1464345197 +0300	commit: pfffff
+0593cf3d3bb61305415310b118a11cba0847f596 752d21f648ca97c55f9504d6d97e33d1b94052e8 Norbert <nsg@tetrasys.fi> 1464345297 +0300	commit: Revert "Validation initiale pour ajouter les fichiers .gitIgnore et .gitAttribute par défaut."
+752d21f648ca97c55f9504d6d97e33d1b94052e8 877f783b6c8b93d3b8c11ca1ae5f858ba01368c4 Norbert <nsg@tetrasys.fi> 1464345305 +0300	commit: Revert "first block x"

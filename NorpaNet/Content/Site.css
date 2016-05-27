@@ -1,0 +1,270 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 380px;
+}
+
+.navbar-fixed2-bottom{width:100%;margin-bottom:0;margin-top:135px;position: absolute; left:0;}
+ a.selected{color: fuchsia !important;}
+
+.center{text-align:center;}
+.center.prod_det, .modedit{margin-left:auto;margin-right:auto;width:80%;}
+.center.prod_det img{height:auto; max-width:80%; max-height:300px;}
+h1.ProdTitle, .h1.ProdTitle{font-size:2em;}
+.Logo{position:absolute;display:block;width:128px;height:161px;background-image:url(/images/lumi5.jpg);background-repeat:no-repeat;background-size:100%;border-bottom: 1px solid #1a1414;left:-128px;}
+.mnu-right{position:absolute;display:block; margin:0;padding:0;width:128px;height:161px;background-color:#1a1414; border-bottom: 1px solid #1a1414; float:right;right:-128px;top:0;text-align:center;}
+.mnu-right ul { margin-right:0 !important;}
+.mnu-right li { width:100%;}
+footer p{font-style:oblique;}
+
+.exib {
+display:inline-block;
+margin-top:15px;
+}
+.exib video {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; 
+    }
+
+ul#productlist{
+    padding:0;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+ul#productlist li {
+    display:inline-block;
+    min-width:100px;
+    height:300px;
+    max-width:150px;
+    text-align:center;
+    margin:12px;
+}
+
+ul#productlist li img {
+        width: 150px;
+        max-height: 250px;
+        vertical-align: bottom;
+        display:block;
+        margin:auto;
+    }
+
+ul#productlist li table tr:first-child {
+        height: 250px;
+        vertical-align: bottom;
+    }
+
+ul#CategoryMenu{
+    padding:0;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+ul#CategoryMenu li {
+    display:inline-block;
+    text-align:center;
+    margin:12px;
+}
+
+ul#CategoryMenu li img {
+        width: 220px;
+        max-height: 220px;
+        vertical-align: bottom;
+    }
+ul#CategoryMenu li b {
+    display:block;
+    }
+ul#CategoryMenu li b.selected a{
+    color:fuchsia;
+    }
+
+
+.body-sep-bottom{
+    display:block;
+    width:100%;
+    height:25px;
+}
+
+
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+.zoom {      
+-webkit-transition: all 0.35s ease-in-out;    
+-moz-transition: all 0.35s ease-in-out;    
+transition: all 0.35s ease-in-out;     
+cursor: -webkit-zoom-in;      
+cursor: -moz-zoom-in;      
+cursor: zoom-in;  
+}     
+
+.zoom:hover,  
+.zoom:active,   
+.zoom:focus {
+/**adjust scale to desired size, 
+add browser prefixes**/
+-ms-transform: scale(2);    
+-moz-transform: scale(2);  
+-webkit-transform: scale(2);  
+-o-transform: scale(2);  
+transform: scale(2);    
+position:relative;      
+z-index:100; 
+margin-top:55px; 
+}
+
+/*
+Darkbox
+*/
+[data-darkbox]{ /* add cursor to clickable darkbox items */
+    cursor:pointer;
+    backface-visibility:hidden;
+}
+#darkbox{
+    position:fixed;
+    z-index:9999;
+    background:rgba(0,0,0,0.8) no-repeat none 50%;
+    background-size: contain;
+    box-shadow:0 0 0 3000px rgba(0,0,0,0.8);
+    opacity:0; 
+    visibility:hidden;
+}
+#darkbox.on{ 
+    opacity:1;
+    visibility:visible;
+    height:90% !important;
+    width:90% !important;
+    left:5% !important;
+    top:5% !important;
+}
+#darkbox:after{
+    position:absolute;
+    right:0; top:0;
+    font-size:2em;
+    content:"x";
+    color:#fff;
+    cursor:pointer;
+}
+/*prev next buttons*/
+#darkbox_prev,
+#darkbox_next{
+    cursor:pointer;
+    user-select:none;
+    -webkit-user-select:none;
+    position:absolute;
+    top:50%;
+    margin-top:-25px;
+    height:50px;
+    width:50px;
+    -webkit-transition:0.3s;
+    transition: 0.3s;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+#darkbox_prev:hover,
+#darkbox_next:hover{
+    border-color: #09c;
+}
+#darkbox_prev{
+    left: -2px;
+    -o-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);    
+    visibility:hidden;
+}
+#darkbox_next{
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: -2px;
+    visibility:hidden;
+}
+#darkbox-description{
+    position: absolute;
+    width:100%;
+    color:#fff;
+    bottom:-25px;
+    text-align: center;
+    text-shadow: 0 1px 1px #000;
+}
+#darkbox-description a{
+    color:#fff;
+    font-weight:bold;
+}
+#darkbox sub{font-size:10px;}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 4px 4px 4px;
+    }
+    .Logo {
+        visibility:hidden;
+    }
+    .navbar-fixed-top {
+        left:0;
+        right:0;
+    }
+    .mnu-right {
+        height: auto;
+        float: left;
+        left:0;
+    }
+    .navbar-fixed-bottom {
+        position: relative; 
+    }
+}
+
+@media screen and (max-width: 400px) {
+    ul#productlist li {
+        display: inline;
+    }
+    ul#productlist li img {
+        width: 320px;
+        max-height: 600px;
+    }
+}
